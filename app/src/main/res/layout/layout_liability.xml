@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <View
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_tik_bg"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_layout">
+        <LinearLayout
+            android:id="@+id/liability_layout_agree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/dont_agree_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/bg_btn_gray"
+                android:gravity="center"
+                android:text="不同意"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/agree_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_home_action_bg"
+                android:gravity="center"
+                android:text="同意"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_above="@+id/liability_layout_agree"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:buttonTint="@color/color_rate_btn"
+            android:checked="false"
+            android:text="@string/i_agree_policy"
+            android:textColor="@color/home_black"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/privacy_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="隐私政策"
+            android:padding="5dp"
+            android:textColor="@color/color_rate_btn"
+            android:layout_above="@+id/checkbox"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/protocol_tv"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:text="用户协议"
+            android:layout_above="@+id/privacy_tv"
+            android:textColor="@color/color_rate_btn"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/protocol_tv">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_polity_title"
+                    android:textColor="@color/home_black"
+                    android:textSize="23dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/user_privacy"
+                    android:textColor="@color/home_black"
+                    android:lineSpacingMultiplier="1.5"
+                    />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

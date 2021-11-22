@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_register"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="22dp">
+
+    <LinearLayout
+        android:id="@+id/register_name_layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login_info"
+        android:divider="@drawable/shape_divide_gray"
+        android:minHeight="60dp"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="6dp"
+        android:showDividers="middle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:maxEms="4"
+            android:minEms="4"
+            android:text="@string/user_name"
+            android:textColor="#3e3e3e"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/register_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:cursorVisible="true"
+            android:gravity="center_vertical"
+            android:hint="@string/input_email"
+            android:maxLength="50"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/jike_text"
+            android:textColorHint="@color/hintTextColor"
+            android:textCursorDrawable="@null"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/register_pwd_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_login_info"
+        android:divider="@drawable/shape_divide_gray"
+        android:minHeight="60dp"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="6dp"
+        android:showDividers="middle"
+        app:layout_constraintBottom_toTopOf="@+id/register_pwd2_layout"
+        app:layout_constraintTop_toBottomOf="@+id/register_name_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:maxEms="4"
+            android:minEms="4"
+            android:singleLine="true"
+            android:text="@string/user_pwd"
+            android:textColor="#3e3e3e"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/register_pwd_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:cursorVisible="true"
+            android:gravity="center_vertical"
+            android:hint="@string/pwd_tip"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/jike_text"
+            android:textColorHint="@color/hintTextColor"
+            android:textCursorDrawable="@null"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/register_pwd2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_login_info"
+        android:divider="@drawable/shape_divide_gray"
+        android:minHeight="60dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="6dp"
+        android:showDividers="middle"
+        app:layout_constraintBottom_toTopOf="@+id/register_submit_tv"
+        app:layout_constraintTop_toBottomOf="@+id/register_pwd_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:maxEms="4"
+            android:minEms="4"
+            android:singleLine="true"
+            android:text="@string/user_pwd_confirm"
+            android:textColor="#3e3e3e"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/register_pwd2_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:cursorVisible="true"
+            android:gravity="center_vertical"
+            android:hint="@string/pwd_input_again"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/jike_text"
+            android:textColorHint="@color/hintTextColor"
+            android:textCursorDrawable="@null"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/register_privacy_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/register_submit_tv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_pwd2_layout">
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/register_privacy_cb"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:gravity="center"
+            android:button="@null"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_cb_privacy" />
+
+        <TextView
+            android:id="@+id/register_tv_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_policy"
+            android:textColor="#c9c9c9"
+            android:textSize="14dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/register_submit_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_theme"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/reginster"
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_privacy_layout"
+        app:layout_constraintWidth_percent="1" />
+
+    <TextView
+        android:id="@+id/register_tv_tologin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/to_login"
+        android:textColor="@color/mainTextColor"
+        android:textSize="16dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_submit_tv"
+        />
+</LinearLayout>

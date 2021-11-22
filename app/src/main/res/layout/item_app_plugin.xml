@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/plugin_icon_iv"
+        android:layout_width="0dp"
+        android:adjustViewBounds="true"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:layout_constraintWidth_percent="0.2"
+        tools:src="@drawable/icon_sim_device"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        />
+
+    <TextView
+        android:id="@+id/plugin_function_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/plugin_icon_iv"
+        app:layout_constraintBottom_toTopOf="@+id/plugin_desc_tv"
+        android:text="位置模拟"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        />
+
+    <com.ft.mapp.widgets.MarqueeTextView
+        android:id="@+id/plugin_desc_tv"
+        android:layout_width="0dp"
+        app:layout_constraintEnd_toStartOf="@id/plugin_switch"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/plugin_function_tv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/plugin_icon_iv"
+        android:text="点击设置位置"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="marquee"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textSize="14dp"
+        android:textColor="@color/black3"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        />
+
+    <com.ft.mapp.widgets.MarqueeTextView
+        android:id="@+id/plugin_desc_tv_tips"
+        android:layout_width="0dp"
+        app:layout_constraintEnd_toStartOf="@id/plugin_switch"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/plugin_desc_tv"
+        app:layout_constraintStart_toEndOf="@+id/plugin_icon_iv"
+        android:text="(部分机型/系统/app暂不支持此功能)"
+        android:layout_marginEnd="10dp"
+        app:layout_goneMarginTop="2dp"
+        android:ellipsize="marquee"
+        android:visibility="visible"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textSize="11dp"
+        android:textColor="#90606060"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        />
+
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:srcCompat="@drawable/ic_arrow_right_white"/>
+
+    <Switch
+        android:id="@+id/plugin_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="5dp"
+        android:thumb="@drawable/switch_thumb"
+        android:track="@drawable/selector_switch_plugin"
+        android:checked="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

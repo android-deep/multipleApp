@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ft.mapp">
+
+    <uses-sdk tools:overrideLibrary="com.bun.miitmdid" />
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- 通话记录 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" /> <!-- sms -->
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" /> <!-- google app start -->
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.OTHER_SERVICES" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.YouTubeUser" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".VApp"
+        android:allowBackup="true"
+        android:extractNativeLibs="true"
+        android:icon="@mipmap/icon_logo"
+        android:label="@string/app_name"
+        android:resizeableActivity="false"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:extractNativeLibs"
+        tools:targetApi="n">
+        <activity android:name=".home.TutorialsActivity" />
+        <activity android:name=".home.activity.SettingActivity" />
+        <activity
+            android:name=".home.activity.FaqDetailActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/UITheme" />
+        <activity
+            android:name=".home.activity.FaqActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/UITheme" />
+        <activity
+            android:name=".splash.SplashActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".home.BackHomeActivity"
+            android:theme="@style/UITheme" />
+        <activity
+            android:name=".home.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".home.ListAppActivity"
+            android:label="@string/clone_apps"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".home.AppLaunchConfigActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".open.ShortcutHandleActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:taskAffinity="virtual.shortcut.task"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="${applicationId}.vbox.action.shortcut" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".home.device.DeviceDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".home.activity.FaqActivityForJava"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".home.activity.FaqDetailActvity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".home.activity.LearnLockAccoutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".home.device.DeviceCustomActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".home.location.ChooseLocationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".home.location.ChooseBDLocationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".home.AboutActivity"
+            android:label="@string/about"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".home.PrivacyPolicyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".home.UserProtocolActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".home.AppDetailActivity"
+            android:label="@string/app_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".home.activity.PluginTiktokActivity"
+            android:label="@string/plugin_no_mark"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".home.activity.PluginStepActivity"
+            android:label="@string/plugin_step_number"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".home.activity.VipActivity"
+            android:label="@string/vip_member"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".home.activity.LoginActivity"
+            android:label="@string/user_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".home.activity.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name="com.ft.multiple.mapp.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- <data android:scheme="tencent101838024" /> -->
+                <data android:scheme="tencent1110620996" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".home.BuyTipActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".home.FeedbackActivity"
+            android:label="@string/help_improve"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".home.pipi.AdWebActivity"
+            android:label="@string/help_improve"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme"
+            tools:ignore="LockedOrientationActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!--        <provider-->
+        <!--            android:name="com.baidu.mobads.openad.BdFileProvider"-->
+        <!--            android:authorities="${applicationId}.bd.provider"-->
+        <!--            android:exported="false"-->
+        <!--            tools:replace="android:authorities"-->
+        <!--            android:grantUriPermissions="true">-->
+        <!--            <meta-data-->
+        <!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+        <!--                tools:replace="android:resource"-->
+        <!--                android:resource="@xml/file_paths" />-->
+        <!--        </provider>-->
+
+        <!-- Since JCore2.0.0 Required SDK核心功能-->
+        <!-- 可配置android:process参数将Service放在其他进程中；android:enabled属性不能是false -->
+        <!-- 这个是自定义Service，要继承极光JCommonService，可以在更多手机平台上使得推送通道保持的更稳定 -->
+        <service android:name=".services.PushService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":pushcore">
+            <intent-filter>
+                <action android:name="cn.jiguang.user.service.action" />
+            </intent-filter>
+        </service>
+
+        <!-- Required since 3.0.7 -->
+        <!-- 新的 tag/alias 接口结果返回需要开发者配置一个自定的广播 -->
+        <!-- 3.3.0开始所有事件将通过该类回调 -->
+        <!-- 该广播需要继承 JPush 提供的 JPushMessageReceiver 类, 并如下新增一个 Intent-Filter -->
+        <receiver
+            android:name=".receivers.MyReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+        <!-- User defined.  For test only  用户自定义接收消息器,3.0.7开始支持,目前新tag/alias接口设置结果会在该广播接收器对应的方法中回调-->
+        <!--since 3.3.0 接收JPush相关事件-->
+        <receiver android:name=".receivers.PushMessageReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+                <category android:name="${applicationId}"></category>
+            </intent-filter>
+        </receiver>
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
+                <category android:name="${applicationId}" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- Required SDK 核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <category android:name="${applicationId}"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL}" />
+        <!--        <meta-data-->
+        <!--         android:name="UMENG_CHANNEL"-->
+        <!--         android:value="guanwang" />-->
+        <meta-data
+            android:name="UMENG_CHANNEL_DEV"
+            android:value="1" />
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="cd415e2e498b3c804d0e653634260f09" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="by6V9cwd3tHGGrlENzBFEKOpIgTlbhlm" />
+
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.TTFileProvider"
+            android:authorities="${applicationId}.TTFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                tools:replace="android:resource"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

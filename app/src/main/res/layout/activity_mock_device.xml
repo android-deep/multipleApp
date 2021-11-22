@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/device_bar"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/mock_device_iv_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_back_white"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            />
+
+        <com.ft.mapp.widgets.MarqueeTextView
+            android:id="@+id/mock_device_tv_device"
+            style="@style/TitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@id/mock_device_iv_back"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_toLeftOf="@id/mock_device_tv_reset"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textStyle="normal"
+            tools:text="机型模拟" />
+
+        <TextView
+            android:id="@+id/mock_device_tv_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:text="@string/reset"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/mock_device_view_divide_1"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:background="#f1f1f1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/device_bar" />
+
+    <TextView
+        android:id="@+id/mock_device_tv_hot_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="热门机型"
+        android:textColor="@color/mainTextColor"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mock_device_view_divide_1" />
+
+    <RadioGroup
+        android:id="@+id/mock_device_rg_hot"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mock_device_tv_hot_tag">
+
+        <RadioButton
+            android:id="@+id/mock_device_rb_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_hot"
+            android:button="@null"
+            android:maxLines="2"
+            android:checked="false"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="iPhone\n11ProMax"
+            android:textColor="@color/mainTextColor"
+            android:textSize="14dp" />
+
+        <RadioButton
+            android:id="@+id/mock_device_rb_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_hot"
+            android:button="@null"
+            android:gravity="center"
+            android:maxLines="2"
+            android:padding="5dp"
+            android:text="华为\nMate 30 Pro"
+            android:textColor="@color/mainTextColor"
+            android:textSize="14dp" />
+
+        <RadioButton
+            android:id="@+id/mock_device_rb_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_hot"
+            android:button="@null"
+            android:gravity="center"
+            android:maxLines="2"
+            android:padding="5dp"
+            android:text="三星\nGalaxy Note 10"
+            android:textColor="@color/mainTextColor"
+            android:textSize="14dp" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/mock_device_view_divide_2"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:background="#f1f1f1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mock_device_rg_hot" />
+
+
+    <RelativeLayout
+        android:id="@+id/mock_device_layout_custom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mock_device_view_divide_2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="自定义机型"
+            android:textColor="@color/mainTextColor"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:alpha="0.5"
+            android:src="@drawable/icon_goto_black" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/mock_device_view_divide_3"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:background="#f1f1f1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mock_device_layout_custom" />
+
+
+    <ScrollView
+        android:id="@+id/mock_device_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toTopOf="@+id/device_save_tv"
+        app:layout_constraintTop_toBottomOf="@+id/mock_device_view_divide_3" >
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/device_save_tv"
+        app:layout_constraintTop_toBottomOf="@+id/mock_device_view_divide_3"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/mock_device_tv_brand_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="品牌"
+            app:layout_constraintTop_toTopOf="@+id/mock_device_layout_brand"
+            app:layout_constraintBottom_toBottomOf="@+id/mock_device_layout_brand"
+            android:textColor="@color/mainTextColor"
+            android:textSize="15dp" />
+
+        <RelativeLayout
+            android:id="@+id/mock_device_layout_brand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_layout_search"
+            app:layout_constraintLeft_toRightOf="@id/mock_device_tv_brand_tag"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="15dp"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/mock_device_tv_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mainTextColor"
+                android:text="请选择品牌"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="15dp"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_model_choose"/>
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mock_device_rv_model"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_height="0dp"
+            android:overScrollMode="never"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mock_device_layout_brand"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/device_save_tv"
+        style="@style/ThemeSubmitButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_theme"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

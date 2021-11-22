@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f5f5f5"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/select_app_search_layout"
+        android:layout_width="match_parent"
+        android:background="#dddddd"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/select_app_iv_search_close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_search"/>
+        <EditText
+            android:id="@+id/select_app_et_search"
+            android:layout_toLeftOf="@+id/select_app_iv_search_close"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:background="@null"
+            android:paddingRight="10dp"
+            android:maxLength="12"
+            android:textColor="@color/mainTextColor"
+            android:gravity="center_vertical"
+            android:textColorHint="@color/hintTextColor"
+            android:hint="请输入搜索内容"
+            android:layout_height="50dp"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/select_app_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="15dp"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/select_app_search_layout"
+        android:overScrollMode="never"
+        app:dsrv_autoScrollEnabled="false"
+        tools:listitem="@layout/item_clone_app"
+        />
+
+    <!-- 这个是浮动的提示 ，配合字母栏实现放大浮动提示滑动到哪个字母-->
+    <com.ft.mapp.widgets.quicksidebar.QuickSideBarTipsView
+        android:id="@+id/quickSideBarTipsView"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/select_app_search_layout"
+        android:layout_toLeftOf="@+id/quickSideBarView"
+        app:sidebarBackgroundColor="@color/colorAccent"
+        app:sidebarTextColor="@android:color/white"
+        app:sidebarTextSize="12dp" />
+
+    <!-- 这个是字母栏的提示 -->
+    <com.ft.mapp.widgets.quicksidebar.QuickSideBarView
+        android:id="@+id/quickSideBarView"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/select_app_search_layout"
+        app:sidebarItemHeight="@dimen/height_quicksidebaritem"
+        app:sidebarTextColor="@color/mainTextColor"
+        app:sidebarTextColorChoose="@color/colorAccent"
+        app:sidebarTextSize="@dimen/textSize_quicksidebar"
+        app:sidebarTextSizeChoose="@dimen/textSize_quicksidebar_choose" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/select_app_search_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="15dp"
+        android:background="@color/white"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/select_app_search_layout"
+        android:overScrollMode="never"
+        app:dsrv_autoScrollEnabled="false"
+        android:visibility="gone"
+        tools:listitem="@layout/item_clone_app"
+        />
+
+    <ProgressBar
+        android:id="@+id/select_app_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

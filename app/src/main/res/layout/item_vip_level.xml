@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+    <RelativeLayout
+        android:id="@+id/item_vip_level_layout_container"
+        android:layout_width="match_parent"
+        android:paddingBottom="18dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_vip_level"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/item_vip_level_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/vip_item_margin_start"
+            android:text="@string/vip_all"
+            android:textColor="#464641"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/item_vip_level_tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_vip_level_tv_title"
+            android:layout_alignStart="@+id/item_vip_level_tv_title"
+            android:layout_toStartOf="@+id/item_vip_level_tv_pre_price"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/desc_all_vip"
+            android:textColor="#6b6b6b"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/item_vip_level_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/vip_item_margin_start"
+            android:text="@string/price_all"
+            android:textColor="#fc7800"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_vip_level_tv_pre_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="2dp"
+            android:layout_toStartOf="@+id/item_vip_level_tv_price"
+            android:text="@string/all_pre_price"
+            android:textColor="#505051"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_vip_level_tv_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="2dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:paddingTop="2dp"
+        android:layout_alignParentEnd="true"
+        tools:text="推荐"
+        android:textColor="#fff"
+        android:background="@drawable/bg_vip_activity" />
+</RelativeLayout>

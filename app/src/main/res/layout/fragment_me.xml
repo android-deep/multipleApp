@@ -1,0 +1,490 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:fitsSystemWindows="true">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bg_action_bar"
+        app:layout_constraintBottom_toBottomOf="@id/me_layout_vip_function_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/me_iv_avatar"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/icon_me_avatar_bg"
+        android:padding="16dp"
+        android:src="@drawable/icon_inner_avatar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/me_tv_open_vip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_open_vip"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="8dp"
+        android:minEms="5"
+        android:text="开通会员"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/me_iv_avatar"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/me_iv_avatar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/me_iv_avatar"
+        app:layout_constraintLeft_toRightOf="@id/me_iv_avatar"
+        app:layout_constraintRight_toLeftOf="@id/me_tv_open_vip"
+        app:layout_constraintTop_toTopOf="@id/me_iv_avatar">
+
+        <com.ft.mapp.widgets.MarqueeTextView
+            android:id="@+id/me_tv_user_account"
+            android:layout_width="0dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:ellipsize="marquee"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="登录/注册" />
+
+        <ImageView
+            android:id="@+id/me_iv_vip_label"
+            android:layout_width="23dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="2dp"
+            android:padding="3dp"
+            android:src="@drawable/icon_vip_label"
+            android:visibility="visible"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/me_tv_user_account" />
+
+        <TextView
+            android:id="@+id/me_tv_vip_expire_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="4dp"
+            android:textSize="14dp"
+            android:visibility="visible"
+            app:layout_constraintLeft_toRightOf="@+id/me_iv_vip_label"
+            app:layout_constraintTop_toBottomOf="@+id/me_tv_user_account"
+            tools:text="会员有效期：2020.06.29" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/me_iv_vip_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintDimensionRatio="1360:262"
+        android:src="@drawable/bg_me_vip_top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/me_iv_avatar"
+        app:layout_constraintWidth_percent="0.95" />
+
+    <LinearLayout
+        android:id="@+id/me_layout_vip_function_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/me_iv_vip_top"
+        app:layout_constraintWidth_percent="0.95">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_vip_multi_infinite" />
+
+            <com.ft.mapp.widgets.MarqueeTextView
+                android:layout_width="match_parent"
+                android:ellipsize="marquee"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="@string/fun_infinite"
+                android:textColor="@color/mainTextColor"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_vip_remove_ad" />
+
+            <com.ft.mapp.widgets.MarqueeTextView
+                android:layout_width="match_parent"
+                android:ellipsize="marquee"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="@string/fun_remove_ad"
+                android:textColor="@color/mainTextColor"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_vip_remove_mark" />
+
+            <com.ft.mapp.widgets.MarqueeTextView
+                android:layout_width="match_parent"
+                android:ellipsize="marquee"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="抖音去水印"
+                android:textColor="@color/mainTextColor"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_vip_fake" />
+
+            <com.ft.mapp.widgets.MarqueeTextView
+                android:layout_width="match_parent"
+                android:ellipsize="marquee"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="应用伪装"
+                android:textColor="@color/mainTextColor"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/me_layout_vip_function_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect_bottom_rounded_white"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/me_layout_vip_function_1"
+        app:layout_constraintWidth_percent="0.95">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_vip_mock_device" />
+
+            <com.ft.mapp.widgets.MarqueeTextView
+                android:layout_width="match_parent"
+                android:ellipsize="marquee"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="@string/fun_sim_device"
+                android:textColor="@color/mainTextColor"
+                android:textSize="13dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/me_layout_vip_fun_mock_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_vip_mock_location" />
+
+            <com.ft.mapp.widgets.MarqueeTextView
+                android:layout_width="match_parent"
+                android:ellipsize="marquee"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="@string/fun_sim_location"
+                android:textColor="@color/mainTextColor"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/me_layout_vip_fun_mock_steps"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_vip_mock_step" />
+
+            <com.ft.mapp.widgets.MarqueeTextView
+                android:layout_width="match_parent"
+                android:ellipsize="marquee"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="@string/plugin_step_number"
+                android:textColor="@color/mainTextColor"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_vip_more" />
+
+            <com.ft.mapp.widgets.MarqueeTextView
+                android:layout_width="match_parent"
+                android:ellipsize="marquee"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="敬请期待"
+                android:textColor="@color/mainTextColor"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/me_divide_1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/me_layout_vip_function_2"
+        android:background="#f1f1f1"/>
+
+    <ImageView
+        android:id="@+id/me_iv_banner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:adjustViewBounds="true"
+        app:layout_constraintDimensionRatio="1396:438"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/me_divide_1"
+        android:src="@drawable/pic_me_banner"/>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/me_iv_banner"
+        android:paddingBottom="10dp"
+        app:layout_constraintWidth_percent="0.95">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_white_corner"
+            android:orientation="vertical">
+
+            <com.ft.mapp.widgets.MineRowView
+                android:id="@+id/setting_tutorials"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:mine_icon="@drawable/icon_me_tutorial"
+                app:mine_title="教程"
+                app:mine_tv_color="@color/me_option_tv_color"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#EAEAEA" />
+
+            <com.ft.mapp.widgets.MineRowView
+                android:id="@+id/setting_single"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/setting_tutorials"
+                app:mine_icon="@drawable/ic_single_run"
+                app:mine_title="@string/setting_app_launch"
+                app:mine_tv_color="@color/me_option_tv_color" />
+
+            <com.ft.mapp.widgets.MineRowView
+                android:id="@+id/setting_share"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/setting_single"
+                app:mine_icon="@drawable/icon_me_share"
+                app:mine_title="@string/thanksforshare"
+                app:mine_tv_color="@color/me_option_tv_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#EAEAEA" />
+
+            <com.ft.mapp.widgets.MineRowView
+                android:id="@+id/setting_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/setting_share"
+                app:mine_icon="@drawable/icon_me_feedback"
+                app:mine_title="@string/help_improve"
+                app:mine_tv_color="@color/me_option_tv_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#EAEAEA" />
+
+            <com.ft.mapp.widgets.MineRowView
+                android:id="@+id/setting_option"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/setting_feedback"
+                app:mine_icon="@drawable/icon_me_settings"
+                app:mine_title="设置"
+                app:mine_tv_color="@color/me_option_tv_color" />
+
+            <com.ft.mapp.widgets.MineRowView
+                android:id="@+id/setting_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/setting_about"
+                app:mine_icon="@drawable/icon_me"
+                app:mine_title="@string/login"
+                app:mine_tv_color="@color/me_option_tv_color" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/me_view_receive"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintWidth_percent="0.25"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_fileName="treasure.json"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.8"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

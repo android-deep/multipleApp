@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/item_fake_iv_logo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        tools:src="@mipmap/icon_logo"/>
+
+    <ImageView
+        android:id="@+id/item_fake_iv_status"
+        android:layout_width="15dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_height="15dp"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/icon_fake_cb_sel"
+        android:clickable="false"/>
+
+</FrameLayout>

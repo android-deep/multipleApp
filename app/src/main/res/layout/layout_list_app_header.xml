@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_hot"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:textColor="@color/mainTextColor"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="15dp"
+        android:visibility="gone"
+        android:textColor="@color/mainTextColor"
+        android:text="@string/app_hot_desc"/>
+
+    <com.ft.mapp.widgets.MyListView
+        android:id="@+id/list_app_header_lv"
+        android:layout_width="match_parent"
+        android:dividerHeight="0.5dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

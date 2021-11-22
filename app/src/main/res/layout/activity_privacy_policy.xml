@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.ft.mapp.widgets.ActionView
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:back_src="@drawable/ic_back_white"
+        app:icon_visible="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/service_privacy_policy" />
+
+    <WebView
+        android:id="@+id/privacy_policy_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/privacy_text"
+                android:textColor="@color/mainTextColor"
+                android:textIsSelectable="true"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

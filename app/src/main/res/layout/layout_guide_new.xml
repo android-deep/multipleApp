@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:id="@+id/guide_new_layout_container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/splash_vp_guide"
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="match_parent"/>
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/splash_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="9dip"
+        app:fillColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="40dp"
+        app:pageColor="#888888"
+        app:radius="3dp"
+        app:strokeColor="#00000000"
+        app:strokeWidth="0dp" />
+
+    <ImageView
+        android:id="@+id/splash_iv_btn_guide_finish"
+        android:layout_width="0dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/ic_btn_guide_finish"
+        app:layout_constraintBottom_toTopOf="@id/splash_indicator"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳过"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:textColor="#fff"
+        android:id="@+id/splash_tv_skip"
+        android:background="#50000000"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

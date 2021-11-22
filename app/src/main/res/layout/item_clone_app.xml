@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="#fff"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/item_app_icon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.ft.mapp.widgets.LabelView
+        xmlns:lv="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_app_clone_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        lv:lv_background_color="@color/colorPrimary"
+        lv:lv_fill_triangle="true"
+        lv:lv_gravity="BOTTOM_LEFT"
+        lv:lv_text="2"
+        lv:lv_text_all_caps="false"
+        lv:lv_text_color="@android:color/white"
+        lv:lv_text_size="12dp"
+        tools:visibility="visible"
+        />
+
+    <com.ft.mapp.widgets.MarqueeTextView
+        android:id="@+id/item_app_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        tools:text="QQ"
+        android:textColor="@color/mainTextColor"
+        android:textSize="14dp"
+        android:layout_marginStart="@dimen/dp16"
+        app:layout_constraintBottom_toBottomOf="@+id/item_app_icon"
+        app:layout_constraintStart_toEndOf="@+id/item_app_icon"
+        app:layout_constraintEnd_toStartOf="@id/btn_add"
+        app:layout_constraintTop_toTopOf="@+id/item_app_icon" />
+
+    <TextView
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:text="@string/clone_app"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:textSize="14dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/bg_app_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

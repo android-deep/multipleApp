@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/faq_bg"
+    android:fitsSystemWindows="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.ft.mapp.widgets.ActionView
+        android:id="@+id/faq_action"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="了解封号"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#1A1E22"
+        android:textSize="16sp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintTop_toBottomOf="@id/faq_action"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        android:text="微信封号的原则是什么?"/>
+
+        <TextView
+            android:id="@+id/tv_src"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="21dp"
+            android:textSize="14sp"
+            android:textColor="#1A1E22"
+            android:lineSpacingExtra="8dp"
+            android:layout_marginRight="24dp"
+            android:text="@string/lock_reason"
+            />
+
+        <TextView
+            android:id="@+id/tv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1A1E22"
+            android:textSize="16sp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_src"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:text="什么号最容易被封??"/>
+
+        <TextView
+            android:id="@+id/tv_src2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_title2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="21dp"
+            android:textSize="14sp"
+            android:textColor="#1A1E22"
+            android:lineSpacingExtra="8dp"
+            android:layout_marginRight="24dp"
+            android:text="@string/high_risk_reason"
+            />
+
+        <TextView
+            android:id="@+id/tv_title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1A1E22"
+            android:textSize="16sp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_src2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:text="号被封了，如何安全解封?"/>
+
+        <TextView
+            android:id="@+id/tv_src3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_title3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="21dp"
+            android:textSize="14sp"
+            android:textColor="#1A1E22"
+            android:lineSpacingExtra="8dp"
+            android:layout_marginRight="24dp"
+            android:text="@string/unlock_account"
+            />
+
+        <TextView
+            android:id="@+id/tv_title4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1A1E22"
+            android:textSize="16sp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_src3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:text="被永久封号了怎么办?"/>
+
+        <TextView
+            android:id="@+id/tv_src4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_title4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="21dp"
+            android:textSize="14sp"
+            android:textColor="#1A1E22"
+            android:lineSpacingExtra="8dp"
+            android:layout_marginRight="24dp"
+            android:text="@string/lock_forver"
+            />
+
+        <TextView
+            android:id="@+id/tv_title5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1A1E22"
+            android:textSize="16sp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_src4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:text="如何避免被系统判定“账号异常”?"/>
+
+        <TextView
+            android:id="@+id/tv_src5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_title5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="21dp"
+            android:textSize="14sp"
+            android:textColor="#1A1E22"
+            android:lineSpacingExtra="8dp"
+            android:layout_marginRight="24dp"
+            android:text="@string/avoid_exception"
+            />
+
+        <TextView
+            android:id="@+id/tv_title6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1A1E22"
+            android:textSize="16sp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_src5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:text="每天加好友的安全数量是多少?"/>
+
+        <TextView
+            android:id="@+id/tv_src6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_title6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="21dp"
+            android:textSize="14sp"
+            android:textColor="#1A1E22"
+            android:lineSpacingExtra="8dp"
+            android:layout_marginRight="24dp"
+            android:text="@string/add_rule"
+            android:layout_marginBottom="80dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

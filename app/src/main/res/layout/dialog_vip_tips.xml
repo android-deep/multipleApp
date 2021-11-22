@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="25dp">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.35"
+        android:src="@drawable/icon_vip_tag"/>
+
+    <TextView
+        android:id="@+id/vip_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/vip_tips"
+        android:textColor="@color/mainTextColor"
+        android:textSize="22dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/vip_tv_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="18dp"
+        tools:text="开通VIP即可无广告解锁所有功能，您也可以观看广告免费试用本次功能"
+        android:textColor="@color/mainTextColor"
+        android:textSize="16dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/vip_btn_ensure"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vip_tv_title" />
+    <TextView
+        android:id="@+id/vip_btn_ad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:text="观看广告，免费试用"
+        app:layout_constraintWidth_percent="0.6"
+        android:textAllCaps="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/hintTextColor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <TextView
+        android:id="@+id/vip_btn_ensure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:layout_marginBottom="15dp"
+        android:text="开通VIP，解除限制"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textStyle="bold"
+        android:background="@drawable/shape_btn_open_vip"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/vip_tv_desc"
+        app:layout_constraintBottom_toTopOf="@id/vip_btn_ad"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

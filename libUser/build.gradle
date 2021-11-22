@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion versions.compile_sdk
+    buildToolsVersion versions.build_tools
+
+    defaultConfig {
+        minSdkVersion versions.min_sdk
+        targetSdkVersion versions.target_sdk
+
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            useProguard true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api 'com.squareup.okhttp3:okhttp:' + versions.okhttp
+    api 'com.squareup.retrofit2:retrofit:' + versions.retrofit
+    api 'com.squareup.okhttp3:logging-interceptor:3.12.0'
+
+    //rxJava
+    implementation("io.reactivex.rxjava2:rxjava:${rxjava2_version}") {
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+    implementation("io.reactivex.rxjava2:rxandroid:${rxandroid_version}") {
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+
+    //Promise Support
+    api 'org.jdeferred.v2:jdeferred-android-aar:2.0.0'
+
+    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'com.google.code.gson:gson:' + versions.gsonVersion
+
+    implementation  'com.umeng.umsdk:common:9.3.3' // 版本号(必选)
+    implementation  'com.umeng.umsdk:asms:1.1.4' // asms包依赖(必选)
+}

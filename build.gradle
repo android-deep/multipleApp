@@ -1,0 +1,82 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: 'config.gradle'
+
+buildscript {
+    ext.kotlin_version = '1.3.71'
+    repositories {
+        maven { url "http://objectbox.net/beta-repo/" }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        maven{ url'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url  'https://repo1.maven.org/maven2/'}
+        maven{ url'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
+        maven {
+            url 'https://artifact.bytedance.com/repository/pangle'
+        }
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.6.4'
+        classpath 'com.android.tools.build:gradle-experimental:0.11.1'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.3.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "io.objectbox:objectbox-gradle-plugin:$objectbox_version"
+        classpath("com.tencent.mm:AndResGuard-gradle-plugin:1.2.17")
+                { changing = true }
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url "http://objectbox.net/beta-repo/" }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        //添加一览 maven地址
+        maven {
+            url 'http://nexus.1lan.tv/repository/maven-releases/'
+        }
+        maven {
+            url 'https://artifact.bytedance.com/repository/pangle'
+        }
+        //添加阿里云maven地址
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+        }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        maven{ url'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven{ url'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
+//        maven { url  'https://repo1.maven.org/maven2/'}
+        google()
+        jcenter()
+        maven {
+            url "https://jitpack.io"
+        }
+        // 支付宝 SDK AAR 包所需的配置
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+
+    versions = [
+            compile_sdk            : 28,
+            build_tools            : "28.0.3",
+            min_sdk                : 19,
+            target_sdk             : 26,
+            version_name           : "2.3.14",
+            version_code           : 1,
+            retrofit               : "2.5.0",
+            okhttp                 : "3.10.0",
+            gsonVersion            : "2.8.5",
+            yilanVersion            : "2.5.0.10",
+            constraintlayoutVewrion: "1.1.3",
+            recyclerview           : "1.1.0",
+            appcompatVersion       : "1.1.0",
+            sevenZip               : "1.2.17"
+    ]
+}

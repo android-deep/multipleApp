@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_corner"
+    android:layout_margin="16dp"
+    android:paddingBottom="30dp"
+    >
+
+    <TextView
+        android:id="@+id/dialog_unregister_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="注销提示"
+        android:textColor="#FF1E1E"
+        android:textSize="18dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/divide_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#333333"
+        android:text="注销账号不可逆，请谨慎操作！！！"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        android:background="@drawable/bg_unregister"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_unregister_title_tv" />
+
+    <TextView
+        android:id="@+id/dialog_unregister_tv_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_rect_stroke"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="取消"
+        android:gravity="center"
+        app:layout_constraintWidth_percent="0.4"
+        android:textColor="#666666"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/dialog_unregister_tv_ok"
+        app:layout_constraintTop_toBottomOf="@+id/divide_view" />
+    <TextView
+        android:id="@+id/dialog_unregister_tv_ok"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_rect_red_solid"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="确认"
+        android:gravity="center"
+        app:layout_constraintWidth_percent="0.4"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/dialog_unregister_tv_cancel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divide_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

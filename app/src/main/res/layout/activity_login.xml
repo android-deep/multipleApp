@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    >
+
+    <com.ft.mapp.widgets.ActionView
+        android:id="@+id/login_action"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:icon_visible="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/login"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="55dp">
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/login_action"
+        />
+
+    <include
+        layout="@layout/layout_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/login_action"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

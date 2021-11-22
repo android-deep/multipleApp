@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".home.TutorialsActivity">
+
+    <com.ft.mapp.widgets.ActionView
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:back_src="@drawable/ic_back_white"
+        app:icon_visible="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="新手教程" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tutorial_tv_1"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.6"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/mainTextColor"
+                android:textSize="17dp"
+                android:text="第一步 点击底部+按钮"/>
+
+            <ImageView
+                android:id="@+id/tutorial_iv_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tutorial_tv_1"
+                android:src="@drawable/img_tutorial_1"
+                app:layout_constraintWidth_percent="0.472"/>
+
+            <TextView
+                android:id="@+id/tutorial_tv_2"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.6"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tutorial_iv_1"
+                android:textColor="@color/mainTextColor"
+                android:textSize="17dp"
+                android:text="第二步 进入应用列表，选择想要实现多开的应用"/>
+
+            <ImageView
+                android:id="@+id/tutorial_iv_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tutorial_tv_2"
+                android:src="@drawable/img_tutorial_2"
+                app:layout_constraintWidth_percent="0.472"/>
+
+            <TextView
+                android:id="@+id/tutorial_tv_3"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.6"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tutorial_iv_2"
+                android:textColor="@color/mainTextColor"
+                android:textSize="17dp"
+                android:text="第三步 等待安装完成，此为分身1，点击可启动分身应用"/>
+
+            <ImageView
+                android:id="@+id/tutorial_iv_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tutorial_tv_3"
+                android:src="@drawable/img_tutorial_3"
+                app:layout_constraintWidth_percent="0.472"/>
+
+
+            <TextView
+                android:id="@+id/tutorial_tv_4"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.6"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tutorial_iv_3"
+                android:textColor="@color/mainTextColor"
+                android:textSize="17dp"
+                android:text="第四步 重复以上动作即可实现多开分身"/>
+
+            <ImageView
+                android:id="@+id/tutorial_iv_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tutorial_tv_4"
+                android:src="@drawable/img_tutorial_4"
+                app:layout_constraintWidth_percent="0.472"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</LinearLayout>

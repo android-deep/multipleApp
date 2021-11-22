@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">libUser</string>
+    <string name="error_network">网络状况不佳</string>
+</resources>

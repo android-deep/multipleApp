@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:fitsSystemWindows="true"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/task_top_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/transparent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/task_top_toolbar"
+        />
+
+    <ImageView
+        android:id="@+id/mock_iv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/map_postion_green"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_point"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="12dp"
+        />
+
+    <ImageView
+        android:id="@+id/search_iv"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_search_locate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/mock_iv"
+        android:layout_margin="16dp"
+        android:background="@drawable/shape_search_bg"
+        android:padding="10dp"
+        android:visibility="gone"
+        />
+
+    <FrameLayout
+        android:id="@+id/bottom_point"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/shape_white80_corner"
+        >
+        <com.ft.mapp.widgets.fittext.FitTextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="@string/unknown_location"
+            android:textColor="@color/gray9"
+            app:ftMaxTextSize="20sp"
+            app:ftMinTextSize="10sp"
+            />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        style="@style/Theme.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:overScrollMode="never"
+        tools:visibility="visible"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintTop_toBottomOf="@+id/task_top_toolbar"
+        >
+
+        <ListView
+            android:id="@+id/search_results"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

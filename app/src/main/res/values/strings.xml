@@ -1,0 +1,216 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">应用多开分身双开助手</string>
+    <string name="create_shortcut">快捷方式</string>
+    <string name="create_shortcut_tip">创建桌面图标，更快捷启动分身APP</string>
+    <!--    <string name="save">保存</string>-->
+    <string name="save">确定保存</string>
+    <string name="save_success">保存成功!</string>
+    <string name="about">关于我们</string>
+    <string name="clone_apps">添加应用</string>
+    <string name="help_improve">反馈</string>
+    <string name="app_detail">应用设置</string>
+    <string name="app_hot">热门应用</string>
+    <string name="app_hot_desc">添加到应用多开分身双开助手以便打开多个账户</string>
+
+    <string name="monopoly_desc"><![CDATA[什么是独立分身：同时只开启一个分身，当启动另一个分身时，会自动结束其它分身，以节约内存，节省电量。]]></string>
+
+    <string name="service_privacy_policy"><u>隐私政策</u></string>
+    <string name="service_use_policy"><u>用户协议</u></string>
+    <string name="save_video">保存本地</string>
+    <string name="delete_app">删除应用</string>
+    <!--    <string name="delete_app_msg">您是否想要删除%s?</string>-->
+    <string name="delete_app_msg">删除%s应用后，其分身中应用数据会被删除，请谨慎操作</string>
+    <string name="process_tip">处理中，请稍等…</string>
+    <string name="first_add_tip">首次添加较慢，请耐心等候。</string>
+    <string name="notice">提示</string>
+    <string name="tip_64">需要安装64位支持，安装后请勿轻易删除分身助手或64位插件，若删除后会影响正常使用。</string>
+    <string name="OK">确定</string>
+
+    <string name="copyright">应用多开分身双开助手 版权所有</string>
+
+    <string name="opening">正在打开 %s… </string>
+    <string name="opening_tip">首次开启可能会耗费较长时间，请耐心等待…</string>
+    <string name="launch_spare">启动分身</string>
+
+    <string name="plugin_location">位置模拟</string>
+    <string name="plugin_step_number">步数模拟</string>
+    <string name="plugin_no_mark">无水印下载</string>
+    <string name="menu_mock_phone">机型模拟</string>
+    <string name="setting_app_launch">独立分身</string>
+
+    <string name="mock_none">真机信息</string>
+    <string name="mock_device">模拟中</string>
+    <string name="dlg_reset_device">重置为真实手机信息</string>
+
+    <string name="mock_phone_des">让您的手机模拟上百种机型</string>
+    <string name="location_des">模拟在世界任意一个位置</string>
+    <!--    <string name="location_des">点击进入设置</string>-->
+    <string name="nomark_des">设置去掉视频里的水印</string>
+    <string name="plugin_action_times">实际步数乘以模拟倍数</string>
+    <string name="switch_no_mark_download">开启无水印下载</string>
+    <string name="plugin_step_set_ok">开始模拟</string>
+    <string name="tik_operate">开启后进入抖音点击悬浮“去水印”按钮一键下载无水印视频</string>
+    <string name="tik_operate_tips">提示：若您在启动抖音分身后屏幕左侧没有去水印图标，则可以下载<font color="#FF881C">抖音极速版</font>并添加分身，启动后就能正常使用一键去除水印功能啦！</string>
+    <string name="plugin_step_desc">实际步数*倍率=模拟步数；例:1*100=100步</string>
+
+    <string name="search">搜索</string>
+    <string name="unknown_location">未知位置</string>
+    <string name="tip_input_keywords">搜索地点</string>
+    <string name="tip_no_find_points">没有找到相关地点</string>
+
+    <string-array name="weeks">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+
+
+    <string name="vip_member">成为会员</string>
+    <string name="not_vip">您尚未开通VIP会员</string>
+    <string name="vip_fun">会员特权</string>
+    <string name="vip_desc">开通会员享受全部特权</string>
+    <string name="vip_renew_desc">继续享受VIP特权服务</string>
+    <string name="vip_all">永久会员</string>
+    <string name="desc_all_vip">无时间限制，后期增加的插件也适用</string>
+    <string name="price_all">￥288</string>
+    <string name="price_format">￥%s</string>
+    <string name="all_pre_price">原价￥599</string>
+    <string name="month_price">￥19.9</string>
+    <string name="day_price">￥2</string>
+    <string name="year_price">￥118</string>
+    <string name="pre_year_price">原价￥199</string>
+    <string name="desc_vip_month">30天</string>
+    <string name="desc_vip_day">1天</string>
+    <string name="title_month_vip">月度会员</string>
+    <string name="title_day_vip">日卡</string>
+    <string name="desc_year_vip">12个月，活动期内仅5折</string>
+    <string name="title_year_vip">年度会员(活动)</string>
+    <string name="alipay">支付宝支付</string>
+    <string name="wepay">微信支付</string>
+    <string name="real_pay">实付:</string>
+    <string name="goto_pay">去支付</string>
+    <string name="vip_user">您是VIP至尊会员</string>
+    <string name="umeng_key">5eec3214978eea0883798937</string>
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+    <string name="vip_user_tip">成为至尊VIP会员</string>
+    <string name="pay_fail">支付失败</string>
+    <string name="agree_policy">同意并继续</string>
+    <string name="i_agree_policy">已阅读并同意上述协议</string>
+    <string name="app_polity_title">用户隐私写及隐私政策</string>
+
+    <string name="user_name">账号:</string>
+    <string name="user_pwd">密码:</string>
+    <string name="user_pwd_confirm">确认密码:</string>
+
+    <string name="login">登录</string>
+    <string name="reginster">注册</string>
+    <string name="no_register">还没有帐号，去注册</string>
+    <string name="to_login">已有账号，去登录</string>
+    <string name="input_pwd">请输入密码</string>
+    <string name="input_pwd_limit">请输入6~12位密码</string>
+    <string name="user_login">登录</string>
+    <string name="user_logout">退出登录</string>
+
+    <string name="input_email">请输入邮箱或手机号</string>
+    <string name="input_correct_type">请输入正确账号</string>
+    <string name="pwd_tip">请填写密码</string>
+    <string name="pwd_input_again">请再次输入密码</string>
+    <string name="pwd_inconformity">两次密码不一致</string>
+    <!--    <string name="register_success">注册成功，请登录</string>-->
+    <string name="register_success">注册成功</string>
+    <string name="register_fail">注册失败</string>
+    <string name="login_fail">登录失败</string>
+    <string name="login_success">登录成功</string>
+    <string name="logout_confirm">您确定要退出登录吗?</string>
+    <string name="cancel">取消</string>
+    <string name="ensure">确定</string>
+
+    <string name="ad_not_prepare">广告还没准备好，请稍候</string>
+
+    <string name="update_cancel">以后再说</string>
+    <string name="update_tips">检测到新版本</string>
+    <string name="vip_tips">开通VIP可享受更多功能</string>
+    <string name="update_ensure">一键更新</string>
+
+    <string name="weixin">微信</string>
+    <string name="thanksforshare">分享</string>
+    <string name="qq">QQ</string>
+    <string name="other">其它</string>
+    <string name="user_id">user id: %s</string>
+    <string name="user_privacy_policy"><u>用户协议与隐私政策</u></string>
+
+    <string name="image_button_content_description">Change state of section</string>
+    <string name="reset">重置</string>
+    <string name="shortcut_name">快捷方式名称</string>
+    <string name="shortcut_permission">权限设置</string>
+    <string name="shortcut_permission_tip">在手机系统设置中，打开\"应用多开分身双开助手\"\"创建桌面快捷方式\"权限，否则可能无法添加至桌面</string>
+    <string name="never_remind">下次不再提醒</string>
+    <string name="goto_set">去设置</string>
+    <string name="shortcut_success">成功添加</string>
+    <string name="buy_tip">购买须知</string>
+    <string name="vip_feature_1">1. VIP特权服务包括：无限多开、机型模拟等。</string>
+    <string name="vip_feature_2">2. VIP服务购买后，与账号绑定(在有vip服务的设备上注册账号)，更换设备后登录账号VIP特权服务可继续使用。同一账号同时仅能在一台设备上登录。</string>
+    <string name="vip_feature_3">3. 请在使用本应用时给予足够的权限，务必允许获取设备信息，若拒绝授予，清除、卸载、恢复出厂设置时会造成数据丢失，导致会员失效。</string>
+    <string name="vip_feature_4">4. 应用多开分身双开助手保留根据相关法律规定、主管部门要求、业务开展情况等对服务的规则进行单方面变更、调整、中断或终止的权利。</string>
+    <string name="vip_feature_5">5.
+        用户购买VIP特权服务时，请慎重考虑后做出决策，购买后不可撤销，基于本服务在用户选择的支付方式下划扣的费用，不以任何形式对用户所支付的费用予以退还，用户应根据自身实际需求合理选择是否购买本服务，本服务自用户购买后生效，直至服务时间到期或服务终止。</string>
+
+    <string name="feedback_title">我们急需您的建议和吐槽</string>
+    <string name="feedback_QQ">QQ联系方式：</string>
+
+    <string name="tab_index">首页</string>
+    <string name="tab_me">我</string>
+    <string name="title_user">个人中心</string>
+
+    <string name="invite_friends">邀请好友</string>
+    <string name="share_title">微信多开、虚拟定位</string>
+    <string name="share_content">微信多开、虚拟考勤、设备模拟，黑科技助力，功能十分强大！\n游戏玩家，上班族，徽商必备！</string>
+
+    <string name="fun_infinite">无限多开</string>
+    <string name="fun_remove_ad">免除广告</string>
+    <string name="fun_sim_location">虚拟定位</string>
+    <string name="fun_all">享受所有特权</string>
+    <string name="fun_sim_device">机型模拟</string>
+    <string name="choose_pay_type">选择支付方式</string>
+    <string name="clone_app">添加</string>
+    <string name="has_receive_vip">已获得免费2天VIP</string>
+    <string name="vip_has_expired">您的VIP特权已失效</string>
+    <string name="vip_login_tips">登录后可方便我们更好地服务您！</string>
+    <string name="vip_hello">会员，您好!</string>
+    <string name="open_vip">开通会员</string>
+    <string name="renewal_vip">去续费</string>
+    <string name="tips_x64">请勿轻易删除应用多开分身双开助手或64位插件，若删除后会影响您的正常使用！！！</string>
+    <string name="to_policy">注册即代表你已经同意《软件服务协议》及《隐私政策》</string>
+    <string name="to_login_policy">登录即代表你已经同意《软件服务协议》及《隐私政策》</string>
+    <string name="way_to_vip">&#160;&#160;&lt;font color="#FF871C">方法1：&lt;/font>点击“去开通”按钮进入成为VIP页购买合适套餐。&lt;br>&#160;&#160;\&lt;font color="#FF871C">方法2：&lt;/font>&lt;/br>点击“VIP会员专享权益”购买合适套餐。&lt;br>&#160;&#160;\&lt;font color="#FF871C">方法3：&lt;/font>&lt;/br>使用本产品付费功能时弹窗购买会员</string>
+    <string name="how_to_use_vip">&#160;&#160;&lt;font color="#FF871C">方法1：&lt;/font>点击分身右上角更多菜单->分身详情，可查看并使用VIP特权功能。&lt;br>&#160;&#160;&lt;font color="#FF871C">方法2：&lt;/font>点击“VIP特权”可查看并使用VIP特权功能。&lt;/br></string>
+    <string name="how_to_charge">&lt;font color="#FF871C">1.一经付费不可退回&lt;/font>&lt;br>&lt;font color="#FF871C">2.新用户首次启动应用可获得免费两天VIP特权&lt;/font>&lt;/br></string>
+    <string name="about_clearhonor">正常使用，不进行违规操作一般不会被封号。不建议用户使用新注册的账号登录分身或者使用分身进行注册。为了降低封号风险，还请您不要使用分身进行各类违规操作。&lt;br>&lt;font color="#FF871C">王者荣耀游戏特别说明:&lt;/font>&lt;/br>1.若启动王者后出现闪退，是王者荣耀检测到外挂或分身，建议换个手机试试。&lt;br>2.若修改战区被封号，第一次封10分钟正常，若被封号时间长，确认是否操作太频繁或做了其他违规操作被举报。&lt;/br>&lt;br>针对修改战区若您有解决小技巧希望能和客服分享，谢谢。&lt;/br></string>
+    <string name="about_oppo_faile">OPPO手机需要开启应用多开分身双开助手的自启动权限，开启方法如下:&lt;br>&lt;font color="#FF871C">方法1：&lt;/font>设置->应用管理->应用多开分身双开助手->允许自动启动->打开&lt;/br>&lt;br>&lt;font color="#FF871C">方法2：&lt;/font>手机管家->权限隐私->自启动管理->应用多开分身双开助手->打开&lt;/br></string>
+    <string name="about_vip_exception">出现账号异常时需要做如下处理:&lt;br>1.将永久会员支付账单提供给客服，应用多开分身双开助手客服会在4个工作日内核实处理。&lt;/br>&lt;br>2.永久会员已经找回的用户，请勿卸载应用多开分身双开助手,卸载重装永久会员依然会有丢失风险。&lt;/br></string>
+    <string name="about_64_exception">先检查下是否同时安装了“应用多开分身双开助手”和“应用多开分身双开助手x64”，若是&lt;br>&lt;font color="#FF871C">第一步：&lt;/font>请卸载应用多开分身双开助手&lt;/br>&lt;br>&lt;font color="#FF871C">第二步：&lt;/font>清除“应用多开分身双开助手"数据，可进入系统设置应用信息清除数据。&lt;/br>&lt;br>&lt;font color="#FF871C">第三步：&lt;/font>清除数据后重新进入“ 应用多开分身双开助手”添加微信分身启动&lt;/br></string>
+    <string name="add_to_desk">需开启创建桌面快捷方式权限&lt;br>方法:进入系统设置--应用--权限管理--应用多开分身双开助手--创建桌面快捷方式(滑到底能看到) -允许&lt;/br></string>
+    <string name="count_of_spare">理论上支持分身的应用可以无限添加分身，但添加一定数量后会影响手机性能，出现手机卡顿等情况，所以需要根据手机配置及多开需求合理添加分身。</string>
+    <string name="about_root">日会员、月会员、年会员及永久会员，更换手机或刷机不影响VIP服务的使用;永久会员绑定设备，若更换手机则需重新购买VIP服务;若已绑定的手机刷机则可继续使用VIP服务。&lt;font color="#FF871C">(永久会员异常可联系客服解决)&lt;/font></string>
+    <string name="about_uninstall">在已经添加分身的情况下卸载应用多开分身双开助手，所添加分身也会被卸载，分身相关应用将无法正常使用。若您为永久会员，卸载应用多开分身双开助手后，永久会员有丢失风险。</string>
+    <string name="about_update_influence">正常情况下，手机系统升级不会对应用多开分身双开助手及分身有影响，但不排除升级过程中手机系统出现异常导致应用数据丢失、损坏等极端情况。</string>
+    <string name="about_disapper_influence">若您未手动卸载64位插件，图标消失对功能使用没有影响哦。</string>
+    <string name="lock_reason">微信号被封的原因很简单，就是这个微信号不像正常使用的微信号。每个微信号的行为都会被获取到相应的关键词，比如朋友圈内容、聊天、红包及其他具有标志性的高频行为。\n\n一般情况下，出现以下两种情况之一极易被封号，官方微信亦是如此 ：\n<font color="#FF871C">1.被系统检测到异常操作</font>\n<font color="#FF871C">2.被用户投诉举报</font></string>
+    <string name="high_risk_reason">1.同一台手机批量注册的微信号，易被封。\n2.同一个IP地址批量注册的微信号，易被封。\n3.注册新号后，批量添加好友、群发消息，易被封。\n4.注册新号后，立即切换其它微信号登录， 易被封。\n5.批量微信所绑定QQ号的密码、昵称雷同，易被封。\n6.批量微信号的登录密码、头像、昵称等信息雷同，易被封。\n7.170/171虚拟号段手机卡注册的微信号，易被封。\n8.曾注册后解绑的手机号再注册微信号，易被封\n9.使用注册软件、接码平台注册的微信号，易被封。\n10.在任何多开软件中注册的微信号，易被封。\n11.如果某个微信号加人的次数多于聊天的次数，易被列入风险管控账号，易被封。\n12.发布色情图片、词汇和违规、违法信息，易被封。\n13.勿在wifi/同IP下申请多个微信号，一个号违规易导致多个号被牵连。(建议不同IP下申请，或不同手机申请。)\n14.注意：大量微信号同时转发同一条H5会遭屏蔽。\n15.同一手机号一年可注册3个微信，周期为：1个月、3个月、一年。（注：微信被封号的原因有很多，被检测到其一异常操作即有风险被封，因此我们要尽量避免以上操作，增强微信安全。）</string>
+    <string name="unlock_account">1.步骤：打开微信-登录-右下角微信安全中心-解封账号。\n2.注意：目前解封后，系统会普遍追封一次，建议准备两个手机号，用于再次解封。\n3.解封前将原客户端删除，下载最新版本后进行解封操作。\n4.解封成功后，建议24小时后再登录，不要添加好友或修改资料等，正常使用2-3天后再操作，否则极易再次被封。\n5.不要通过第三方软件或在任何多开软件解封，容易被追加封号和永久封号。解封时建议保持一机一号一IP的原则。\n6.每个手机号每月仅可为一个微信号解封。</string>
+    <string name="lock_forver">1.永久封号基本无法找回，目前没有成功案例。\n2.QQ注册的微信号被永久封号，不影响QQ的正常登录。\n3.QQ注册的微信号永久封号6--12个月后，QQ可再次绑定新微信号，但以前该QQ注册的微信资料会被全部清空。</string>
+    <string name="avoid_exception">系统通过真实、信用、活跃3个维度判断账号是否是 真实用户在使用，一旦被系统判定为“账号异常”， 离封号就不远了。那么，如何避免被系统判定为“账 号异常”?  我们给出以下三个建议：\n1.增加真实权重：注册新号后添加3--5位好友，一周 内保持频繁互动，对好友备注、设置标签与分组。\n2.增加信用权重：完善账号信息，设置微信的独立账 号与密码，绑定QQ号、银行卡，开通微信钱包并充 值，适当购买低额理财通产品。\n3.提高活跃度：进微信群聊天，建议24小时内一次即 可，发1-2次群红包，每周至少打开1次腾讯新闻，关 注公众号、转发、收藏文章，加入微信群，下载微信 游戏，使用漂流瓶、摇一摇，下载微信表情包等模拟 真实用户的常规操作。</string>
+    <string name="add_rule">1.通信录导入：12小时只能加25位好友。\n2.查找添加：12小时只能查找15人。\n3.扫一扫：一次只能添加15个。\n4.摇一摇：一次只能摇10个。\n5.面对面建群：现场能建100人群。\n6.被动添加：24小时只能加260人。\n7.主动添加：24小时不超过30人。\n8.好友上限：理论上限为5000，但每个人的好友数量 上限没有统一标准。(好友数量在3000以上，发朋友 圈时约有15%-20%的好友看不到你发的内容，好友数 量达到5000人时，约有30%的好友看不到你发的内容， 因此1个微信好友加到3000人就足够。)</string>
+    <string name="permission_setting">部分手机定制系统对App进行了严格限制，会影响一些正常App的使用，因此需要您检查相关权限设置，针对不同品牌机型可参考以下方法设置:&lt;br>&lt;/br>&lt;br>&lt;/br>&lt;br>通知权限&lt;/br>&lt;br>方法1:设置->应用->应用管理->应用多开分身双开助手->通知管理->允许通知&lt;/br>&lt;br>方法2:设置->更多应用->应用多开分身双开助手->通知管理->允许通知&lt;/br>&lt;br>方法3:设置->应用程序->应用多开分身双开助手->通知->允许通知&lt;/br>&lt;br>&lt;/br>&lt;br>&lt;/br>&lt;br>自启动管理&lt;/br>&lt;br>方法1:设置->应用->应用启动管理->应用多开分身双开助手->关闭自动管理->手动打开所有3项启动管理&lt;/br>&lt;br>方法2:设置->更多应用->应用多开分身双开助手->自启动->开启&lt;/br>&lt;br>方法3:设置->应用管理->应用多开分身双开助手->应用权限->单项权限设置->自启动->开启&lt;/br>&lt;br>&lt;/br>&lt;br>&lt;/br>&lt;br>耗电保护白名单&lt;/br>&lt;br>方法1:设置->应用管理->应用多开分身双开助手->耗电保护一>允许后台运行&lt;/br>&lt;br>方法1:设置->应用管理->应用多开分身双开助手->耗电保护一>允许后台运行&lt;/br>&lt;br>方法3:设置->更多应用->应用多开分身双开助手->省电策略->无限制&lt;/br>&lt;br>方法4:设置->电池->自定义耗电保护->应用多开分身双开助手->允许后台运行&lt;/br></string>
+    <string name="contact_unmber"><u>455556588</u></string>
+
+    <string name="multi_third_login_tips">温馨提示：需使用第三方账号的分身应用(例：王者荣耀等)建议 先登录本应用上的(第三方分身)微信、QQ等</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/shape_tik_bg"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/fake_iv_cur"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.152"
+        tools:src="@mipmap/icon_logo" />
+
+    <TextView
+        android:id="@+id/fake_tv_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="自定义名称"
+        android:textColor="@color/mainTextColor"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@id/fake_layout_name"
+        app:layout_constraintLeft_toRightOf="@id/fake_iv_cur"
+        app:layout_constraintTop_toTopOf="@id/fake_iv_cur" />
+
+    <RelativeLayout
+        android:id="@+id/fake_layout_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_layout_search"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/fake_iv_cur"
+        app:layout_constraintLeft_toRightOf="@id/fake_iv_cur"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fake_tv_name_label">
+
+        <ImageView
+            android:id="@+id/fake_iv_clear"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/icon_clear_text" />
+
+        <EditText
+            android:id="@+id/fake_et_fake_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/fake_iv_clear"
+            android:background="@null"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:singleLine="true"
+            android:textColor="@color/mainTextColor"
+            android:textColorHint="#999999"
+            android:textSize="15dp"
+            tools:hint="微博" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fake_tv_commend_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="推荐图标"
+        android:textColor="@color/mainTextColor"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fake_layout_name" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fake_rv_icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fake_tv_commend_label" />
+
+    <View
+        android:id="@+id/fake_view_divide_1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#EAEAEA"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fake_rv_icon" />
+
+    <RelativeLayout
+        android:id="@+id/fake_layout_custom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fake_view_divide_1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="自定义图标"
+            android:textColor="@color/mainTextColor"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_me_goto" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/fake_view_divide_2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="15dp"
+        android:background="#EAEAEA"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fake_layout_custom" />
+
+    <TextView
+        android:id="@+id/fake_tv_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_btn_fake_cancel"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/cancel"
+        android:textColor="#666666"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fake_tv_submit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fake_view_divide_2"
+        app:layout_constraintWidth_percent="0.38" />
+
+    <TextView
+        android:id="@+id/fake_tv_submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_theme"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="确认修改"
+        android:textColor="#fff"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fake_tv_cancel"
+        app:layout_constraintTop_toBottomOf="@id/fake_view_divide_2"
+        app:layout_constraintWidth_percent="0.38" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

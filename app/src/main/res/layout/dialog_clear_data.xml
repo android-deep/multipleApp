@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_dialog"
+    android:layout_margin="25dp">
+
+    <ImageView
+        android:id="@+id/clear_data_tv_title"
+        android:layout_width="0dp"
+        android:adjustViewBounds="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintWidth_percent="0.236"
+        android:src="@drawable/icon_clear_data"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/clear_data_tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:text="一键修复，将清空当前分身数据"
+        app:layout_constraintTop_toBottomOf="@id/clear_data_tv_title"
+        android:textColor="@color/mainTextColor"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/divide_view"/>
+
+    <View
+        android:id="@+id/divide_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="25dp"
+        android:background="#F2F2F2"
+        app:layout_constraintTop_toBottomOf="@+id/clear_data_tv_desc" />
+
+
+    <TextView
+        android:id="@+id/clear_data_btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="@string/cancel"
+        android:textAllCaps="true"
+        android:textColor="@color/hintTextColor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/clear_data_btn_ensure"
+        app:layout_constraintTop_toBottomOf="@+id/divide_view" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="48dp"
+        android:background="#F2F2F2"
+        app:layout_constraintStart_toEndOf="@+id/clear_data_btn_cancel"
+        app:layout_constraintTop_toBottomOf="@+id/divide_view" />
+
+    <TextView
+        android:id="@+id/clear_data_btn_ensure"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="@string/ensure"
+        android:textAllCaps="true"
+        android:textColor="@color/mainTextColor"
+        app:layout_constraintLeft_toRightOf="@+id/clear_data_btn_cancel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divide_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

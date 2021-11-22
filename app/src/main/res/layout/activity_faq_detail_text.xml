@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    >
+    <com.ft.mapp.widgets.ActionView
+        android:id="@+id/faq_action"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:icon_visible="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="常见问题"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#1A1E22"
+        android:textSize="16sp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintTop_toBottomOf="@id/faq_action"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        tools:text="应用多开分身双开助手功能说明"/>
+    
+    
+    <TextView
+        android:id="@+id/tv_src"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="21dp"
+        android:textSize="14sp"
+        android:textColor="#1A1E22"
+        android:lineSpacingExtra="5dp"
+        android:layout_marginRight="24dp"
+        tools:text="正常使用，不进行违规操作一般不会被封号。不建议用户使用新注册的账号登录分身或者使用分身进行注册。为了降低封号风险，还请您不要使用分身进行各类违规操作。"
+        />
+    
+    <TextView
+        android:id="@+id/tv_lock_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_src"
+        app:layout_constraintLeft_toLeftOf="@id/tv_src"
+        android:layout_marginTop="10dp"
+        android:text="了解封号》》"
+        android:textSize="14sp"
+        android:textColor="#3478F6"
+        android:visibility="gone"
+        android:onClick="toLeanLockAccountActivity"/>
+
+    <TextView
+        android:id="@+id/tv_contact_qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="客服QQ："
+        android:textColor="#101010"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_contact_qq_value"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_contact_qq_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/contact_unmber"
+        android:textColor="#3478F6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintLeft_toRightOf="@id/tv_contact_qq"
+        app:layout_constraintRight_toRightOf="parent"
+        android:visibility="gone"
+        android:onClick="toQQContact"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
