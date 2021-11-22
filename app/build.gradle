@@ -54,16 +54,10 @@ android {
 
     signingConfigs {
         release {
-            storeFile file("./keystore/xapp.keystore")
-            storePassword '3tKsLBtubvBIzZql'
-            keyAlias 'my-xxapp'
-            keyPassword '3tKsLBtubvBIzZql'
+           
         }
         debug {
-            storeFile file("./keystore/xapp.keystore")
-            storePassword '3tKsLBtubvBIzZql'
-            keyAlias 'my-xxapp'
-            keyPassword '3tKsLBtubvBIzZql'
+         
         }
     }
 
@@ -73,14 +67,14 @@ android {
             shrinkResources true
             zipAlignEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro', 'vb-proguard-rules.pro'
-            signingConfig signingConfigs.release
+           
         }
         debug {
             minifyEnabled false
             shrinkResources false
             zipAlignEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro', 'vb-proguard-rules.pro'
-            signingConfig signingConfigs.release
+          
         }
     }
 
