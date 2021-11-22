@@ -7,13 +7,8 @@
 2.本项目使用的VirtualBox开源版本已经过时，如果有需求或者使用上的疑问，可联系第三方作者[tinycode1](https://github.com/tinycode1)
 # 修改声明
 1.修改包名以及部分类名  
-2.优化后台启动Activity限制  
-3.适配支持Android 10,11  
-4.支持Split应用双开  
-5.支持多开独占式多开，节省内存和电量  
-6.修复双开环境中其他App通过微信登录问题  
-7.优化64位插件不依赖主包代码  
-8.优化机型模拟配置  
+2.添加快捷方式图标修改的功能  
+3.优化部分功能的使用体验
 # 引用  
 https://github.com/asLody/VirtualApp  
 https://github.com/tinycode1/VirtualBox  
@@ -21,4 +16,6 @@ https://github.com/tinycode1/VirtualBox
 2019年7月
 # 致谢
 1.[virtualApp](https://github.com/asLody/VirtualApp)  
-2.[FreeReflection](https://github.com/tiann/FreeReflection)
+2.[virtualBox](https://github.com/tinycode1/VirtualBox)  
+3.[FreeReflection](https://github.com/tiann/FreeReflection)  
+
