@@ -18,3 +18,6 @@ Android 双开
 https://github.com/tinycode1/VirtualBox
 # 修改日期
 2019年7月
+# 致谢
+1.[virtualApp](https://github.com/asLody/VirtualApp)  
+2.[FreeReflection](https://github.com/tiann/FreeReflection)
