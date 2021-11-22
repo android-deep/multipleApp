@@ -1,5 +1,7 @@
 # 简介
-Android 双开
+Android 双开  
+本项目发布符合GPL3.0协议及任何符合第7条的附加条件  
+本项目同时也遵循GPL-3.0 License，进行开源
 # 警告
 本项目使用的VirtualApp开源版本已经过时，如果有需求，为了贵公司的长期稳定发展，请使用Virtual App商业版，联系Lody(imlody@foxmail.com)即可
 # 修改声明
